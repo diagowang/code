@@ -9,7 +9,8 @@ type duration int
 
 // format pretty-prints the duration value.
 func (d *duration) pretty() string {
-	return fmt.Sprintf("Duration: %d", *d)
+	fmt.Println(*d)
+	return fmt.Sprintf("Duration: %p", &d)
 }
 
 // main is the entry point for the application.
